@@ -24,11 +24,11 @@
       
       <div class="flex-col w-1/2 relative" style="height: calc(100vh - 88px)">
         <div class="absolute overflow-auto rounded-2xl shadow-2xl right-0 top-16" >
-          <g-image src="~/assets/plogging1.jpg" width="700"/>
+          <g-image src="~/assets/plogging1.jpg" width="700" class="block"/>
         </div>
 
          <div class="absolute overflow-auto rounded-2xl shadow-2xl top-1/2">
-          <g-image src="~/assets/plogging2.jpg" width="700"/>
+          <g-image src="~/assets/plogging2.jpg" width="700" class="block"/>
         </div>
 
         <div class="rounded-2xl bg-gray-50 p-8 absolute shadow-2xl top-1/3 left-20 w-3/4">
@@ -90,3 +90,36 @@ export default {
 </script>
 
 
+
+<style>
+
+  .markdown-body {
+    white-space: pre-wrap;
+    color: #24292e;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .markdown-body::before {
+    display: table;
+    content: "";
+  }
+  .markdown-body h2{
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    border-bottom: 1px solid #eaecef;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+  .markdown-body>*:first-child {
+    margin-top: 0 !important;
+  }
+  .markdown-body h3 {
+    font-size: 1.25em;
+    margin-top: 24px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.25;
+  }
+</style>
