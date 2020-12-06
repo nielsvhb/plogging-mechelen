@@ -1,15 +1,37 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-      </nav>
+  <div>
+    <header class="items-center py-8 bg-gray-50">
+      <div class="mx-auto container justify-between flex">
+        <strong>
+          <g-link to="/">{{ $static.metadata.siteName }}</g-link>
+        </strong>
+        <nav class="space-x-10">
+          <g-link to="/start">Start met ploggen</g-link>
+          <g-link to="/sensibiliseer">Sensibiliseer</g-link>
+          <g-link to="/faq">FAQ</g-link>
+          <g-link to="/contact">Contact</g-link>
+        </nav>
+      </div>
     </header>
+    
     <slot/>
+
+    <footer class="bg-gray-700 text-white py-10 mt-24">
+      <div class="container mx-auto">
+        <div class="flex">
+            <div class="flex-col w-1/2"><span>Copyright 2020 - alle rechten voorbehouden</span></div>
+            <div class="flex-col w-1/2">
+              <ul>
+                <li><g-link to="/start">Start met ploggen</g-link></li>
+                <li><g-link to="/sensibiliseer">Sensibiliseer</g-link></li>
+                <li><g-link to="/faq">FAQ</g-link></li>
+                <li><g-link to="/contact">Contact</g-link></li>
+              </ul>
+            </div>
+        </div>
+        
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -30,21 +52,10 @@ body {
 }
 
 .layout {
-  max-width: 760px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-}
 </style>

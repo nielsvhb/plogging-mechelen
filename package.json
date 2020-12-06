@@ -8,6 +8,11 @@
   },
   "dependencies": {
     "@gridsome/source-strapi": "^0.2.0",
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.0",
+    "gsap": "^3.5.1",
+    "postcss": "^8.1.14",
+    "purgecss": "^3.0.0",
+    "tailwindcss": "^2.0.1",
+    "vue-simple-markdown": "^1.1.4"
   }
 }
