@@ -2,7 +2,7 @@
 require('~/main.css')
 import DefaultLayout from '~/layouts/Default.vue';
 import VueSimpleMarkdown from 'vue-simple-markdown';
-import 'vue-simple-markdown/dist/vue-simple-markdown.css'
+//import 'vue-simple-markdown/dist/vue-simple-markdown.css'
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
