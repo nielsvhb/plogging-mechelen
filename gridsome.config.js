@@ -15,7 +15,7 @@ module.exports = {
       options: {
         apiURL: process.env.NODE_ENV === 'development' ? 'http://localhost:1337' : 'https://plogging-mechelen-api.herokuapp.com/',
         queryLimit: 1000, // Defaults to 100
-        contentTypes: ['user'],
+        contentTypes: ['user', 'faq'],
         singleTypes: ['homepage'],
         // Possibility to login with a Strapi user,
         // when content types are not publicly available (optional).

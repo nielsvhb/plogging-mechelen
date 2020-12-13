@@ -12,3 +12,10 @@ This is the project you get when you run `gridsome create new-project`.
 2. `cd my-gridsome-site` to open the folder
 3. `gridsome develop` to start a local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
+
+
+### 3. ADd content-types
+Add the content type and some content.
+Set the correct user permissions and check your endpoint.
+Add the content type to gridsome config
+Rebuild client to build new schema.

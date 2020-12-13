@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-col min-h-screen">
     <header class="items-center py-8 bg-gray-50">
       <div class="mx-auto container justify-between flex">
         <strong>
@@ -13,9 +13,9 @@
         </nav>
       </div>
     </header>
-    
-    <slot/>
-
+    <main class="flex-grow flex-shrink-0">
+      <slot/>
+    </main>
     <footer class="bg-gray-700 text-white py-10 mt-24">
       <div class="container mx-auto">
         <div class="flex">
