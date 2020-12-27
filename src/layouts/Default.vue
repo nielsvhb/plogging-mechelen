@@ -34,10 +34,10 @@
               v-if="!isSent"
               class="flex" 
               @submit.prevent="handleSubmit()" 
-               name="submit-email"
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="email-collection" />
                 <input type="email" v-model="email" class="rounded px-4 py-2 w-80" placeholder="E-mailadres">
                 <button type="submit" class="rounded bg-blue-500 text-white py-2 px-8 tracking-wide font-semibold inline-block text-lg"><i class="fas fa-paper-plane"></i></button>
               </form>
@@ -71,18 +71,16 @@ query {
       };
     },
     methods: {
-      handleSubmit () {
-        const axiosConfig = {
-          header: { "Content-Type": "application/x-www-form-urlencoded" }
-        };
-
-        axios.post(
+      async handleSubmit () {
+        await axios.post(
           "/",
           this.encode({
-            "form-name": "ask-question",
+            "form-name": "email-collection",
             email: this.email
           }),
-          axiosConfig
+          {
+            header: { "Content-Type": "application/x-www-form-urlencoded" }
+          }
         );
 
         this.isSent = true;
