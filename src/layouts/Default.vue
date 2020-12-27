@@ -72,22 +72,29 @@ query {
     },
     methods: {
       handleSubmit () {
-      const axiosConfig = {
-        header: { "Content-Type": "application/x-www-form-urlencoded" }
-      };
+        const axiosConfig = {
+          header: { "Content-Type": "application/x-www-form-urlencoded" }
+        };
 
-      axios.post(
-        "/",
-        this.encode({
-          "form-name": "ask-question",
-          email: this.email
-        }),
-        axiosConfig
-      );
+        axios.post(
+          "/",
+          this.encode({
+            "form-name": "ask-question",
+            email: this.email
+          }),
+          axiosConfig
+        );
 
-      this.isSent = true;
-      this.email = '';
-    }
+        this.isSent = true;
+        this.email = '';
+      },
+      encode (data) {
+        return Object.keys(data)
+          .map(
+            key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+          )
+          .join("&");
+      },
     }
   }
 </script>
