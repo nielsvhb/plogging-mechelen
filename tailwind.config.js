@@ -9,6 +9,9 @@ module.exports = {
         teal: colors.teal
       }
     },
+    container: {
+      padding: '2rem',
+    },
   },
   variants: {
     extend: {},
