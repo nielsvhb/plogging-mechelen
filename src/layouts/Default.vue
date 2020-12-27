@@ -16,17 +16,20 @@
     <main class="flex-grow flex-shrink-0">
       <slot/>
     </main>
-    <footer class="bg-gray-700 text-white py-10 mt-24">
+    <footer class="bg-gray-800  py-10 mt-24">
       <div class="container mx-auto">
         <div class="flex">
-            <div class="flex-col w-1/2"><span>Copyright 2020 - alle rechten voorbehouden</span></div>
             <div class="flex-col w-1/2">
-              <ul>
+              <h2 class="text-gray-300 mb-4">Sitemap</h2>
+              <ul class="text-gray-400">
                 <li><g-link to="/start">Start met ploggen</g-link></li>
                 <li><g-link to="/sensibiliseer">Zet ploggen in de kijker</g-link></li>
                 <li><g-link to="/faq">FAQ</g-link></li>
                 <li><g-link to="/contact">Contact</g-link></li>
               </ul>
+            </div>
+            <div class="flex-col w-1/2">
+              <h2 class="text-gray-300 mb-4">Schrijf je in op de nieuwsbrief</h2>
             </div>
         </div>
         
