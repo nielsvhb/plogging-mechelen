@@ -24,11 +24,11 @@
       
       <div class="flex-col w-1/2 relative" style="height: calc(100vh - 88px)">
         <div class="absolute overflow-auto rounded-2xl shadow-2xl right-0 top-16" >
-          <g-image src="~/assets/plogging1.jpg" width="700" class="block"/>
+          <g-image src="~/assets/plogging1.jpg" width="580" class="block"/>
         </div>
 
          <div class="absolute overflow-auto rounded-2xl shadow-2xl top-1/2">
-          <g-image src="~/assets/plogging2.jpg" width="700" class="block"/>
+          <g-image src="~/assets/plogging2.jpg" height="450" class="block"/>
         </div>
 
         <div class="rounded-2xl bg-gray-50 p-8 absolute shadow-2xl top-1/3 left-20 w-3/4">

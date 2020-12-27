@@ -7,7 +7,7 @@
         </strong>
         <nav class="space-x-10">
           <g-link to="/start">Start met ploggen</g-link>
-          <g-link to="/sensibiliseer">Sensibiliseer</g-link>
+          <g-link to="/sensibiliseer">Zet ploggen in de kijker</g-link>
           <g-link to="/faq">FAQ</g-link>
           <g-link to="/contact">Contact</g-link>
         </nav>
@@ -23,7 +23,7 @@
             <div class="flex-col w-1/2">
               <ul>
                 <li><g-link to="/start">Start met ploggen</g-link></li>
-                <li><g-link to="/sensibiliseer">Sensibiliseer</g-link></li>
+                <li><g-link to="/sensibiliseer">Zet ploggen in de kijker</g-link></li>
                 <li><g-link to="/faq">FAQ</g-link></li>
                 <li><g-link to="/contact">Contact</g-link></li>
               </ul>
