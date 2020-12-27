@@ -35,10 +35,10 @@
               class="flex" 
               @submit.prevent="handleSubmit()" 
                 method="post"
+                name="email-collection"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field">
-                <input type="hidden" name="form-name" value="email-collection" />
-                <input type="email" v-model="email" class="rounded px-4 py-2 w-80" placeholder="E-mailadres">
+                <input name="email" type="email" v-model="email" class="rounded px-4 py-2 w-80" placeholder="E-mailadres">
                 <button type="submit" class="rounded bg-blue-500 text-white py-2 px-8 tracking-wide font-semibold inline-block text-lg"><i class="fas fa-paper-plane"></i></button>
               </form>
               <p v-else class="text-gray-400">
