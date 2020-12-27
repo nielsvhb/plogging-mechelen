@@ -31,6 +31,7 @@
             <div class="flex-col w-1/2">
               <h2 class="text-gray-300 mb-4">Schrijf je in op de nieuwsbrief!</h2>
               <form 
+              v-if="!isSent"
               class="flex" 
               @submit.prevent="handleSubmit()" 
                name="submit-email"
@@ -40,6 +41,9 @@
                 <input type="email" v-model="email" class="rounded px-4 py-2 w-80" placeholder="E-mailadres">
                 <button type="submit" class="rounded bg-blue-500 text-white py-2 px-8 tracking-wide font-semibold inline-block text-lg"><i class="fas fa-paper-plane"></i></button>
               </form>
+              <p v-else class="text-gray-400">
+                Bedankt voor je registratie.
+              </p>
             </div>
         </div>
         
@@ -57,10 +61,13 @@ query {
 </static-query>
 
 <script>
+  import axios from 'axios';
+
   export default {
     data() {
       return {
-        email: ''
+        email: '',
+        isSent: false
       };
     },
     methods: {
@@ -68,6 +75,7 @@ query {
       const axiosConfig = {
         header: { "Content-Type": "application/x-www-form-urlencoded" }
       };
+
       axios.post(
         "/",
         this.encode({
@@ -76,6 +84,9 @@ query {
         }),
         axiosConfig
       );
+
+      this.isSent = true;
+      this.email = '';
     }
     }
   }
