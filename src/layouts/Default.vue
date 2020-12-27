@@ -86,13 +86,18 @@ query {
         this.isSent = true;
         this.email = '';
       },
-      encode (data) {
-        return Object.keys(data)
-          .map(
-            key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-          )
-          .join("&");
-      },
+      encode(object) {
+        var encodedString = '';
+        for (var prop in object) {
+            if (object.hasOwnProperty(prop)) {
+                if (encodedString.length > 0) {
+                    encodedString += '&';
+                }
+                encodedString += encodeURI(prop + '=' + object[prop]);
+            }
+        }
+        return encodedString;
+    },
     }
   }
 </script>
