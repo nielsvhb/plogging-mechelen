@@ -23,7 +23,7 @@
                      </li>
                     <li>
                         <ul class="pl-10">
-                            <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-blue-500"></i><a href="http://www.makers.mechelen.be" target="_blank" class="text-blue-400 font-semibold">www.makers.mechelen.be</a></li>
+                            <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-blue-500"></i><a href="http://makers.mechelen.be" target="_blank" class="text-blue-400 font-semibold">makers.mechelen.be</a></li>
                             <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-blue-500"></i>Klik op “samen doen”</li>
                             <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-blue-500"></i>Onder de rubriek ‘Stad om te Zoenen’ klik je vervolgens op “Peters en Meters”</li>
                             <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-blue-500"></i>Vul het formulier in door eerst op het rode kader te klikken “IK WIL PETER OF METER WORDEN”</li>
