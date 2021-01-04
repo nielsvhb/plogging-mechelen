@@ -36,11 +36,11 @@
             </div>
             <div class="w-1/3 relative">
                 <div class="absolute overflow-auto rounded-2xl shadow-2xl right-0 top-16" >
-                    <g-image src="~/assets/plogging3.jpg" width="450" class="block"/>
+                    <g-image src="~/assets/plogging3.jpg" width="450" class="block" alt="Plogging Mechelen" />
                 </div>
 
                 <div class="absolute overflow-auto rounded-2xl shadow-2xl top-2/3">
-                    <g-image src="~/assets/plogging4.jpg" width="400" class="block"/>
+                    <g-image src="~/assets/plogging4.jpg" width="400" class="block" alt="Plogging Mechelen" />
                 </div>
             </div>
         </div>

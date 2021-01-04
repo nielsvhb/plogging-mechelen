@@ -30,12 +30,14 @@
       </div>
     </div>
 
-    <div class="mx-auto p-20 bg-gray-50 my-20">
-      <div>
-        <div class="uppercase text-5xl font-bold mb-4 text-gray-600 text-center"><h2>Laatste nieuws</h2></div>
+    <div class="mx-auto p-20 bg-gray-50 my-20 relative">
+      <div class="absolute bg-gray-50 h-2/3 left-0 rotate-2 transform w-full z-0" style="top: -10%"></div>
+      <div class="absolute bg-gray-50 h-2/3 left-0 rotate-2 transform w-full z-0" style="bottom: -10%"></div>
+      <div class="relative">
+        <div class="uppercase text-5xl font-bold mb-4 text-gray-600 text-center"><h2 class="font-extrabold  text-gray-500 tracking-widest">Laatste nieuws</h2></div>
         <div class="flex">
           <div v-for="(article, index) in articles" :key="index" class="mx-8 rounded-xl p-10 shadow bg-white" :class="getBgClass(index)">
-            <div class="flex items-center mb-5 "><i class="fas fa-bullhorn mr-2" :class="getTextClass(index)"></i><h3 class="font-bold text-xl tracking-wide" :class="getTextClass(index)">{{article.title}}</h3></div>
+            <div class="flex items-center mb-5 "><i class="fas fa-bullhorn mr-2" :class="getTextClass(index)"></i><h3 class="font-semibold text-xl tracking-wide" :class="getTextClass(index)">{{article.title}}</h3></div>
             <p class="text-gray-600">
               {{article.content}}
             </p>
@@ -46,7 +48,7 @@
 
     <div class="mx-auto container relative">
       <div class=" overflow-auto rounded-2xl shadow-2xl absolute left-0 top-8" >
-          <g-image src="~/assets/plogging1.jpg" width="580" class="block"/>
+          <g-image src="~/assets/plogging1.jpg" width="580" class="block" alt="Plogging Mechelen"/>
       </div>
       <div class="py-40 w-1/3 z-20 mx-auto relative">
         <div class="rounded-2xl bg-gray-50 p-8  shadow-2xl">
@@ -57,7 +59,7 @@
         </div>
       </div>
       <div class="absolute overflow-auto rounded-2xl shadow-2xl right-0 top-20">
-        <g-image src="~/assets/plogging2.jpg" height="420" class="block"/>
+        <g-image src="~/assets/plogging2.jpg" height="420" class="block" alt="Plogging Mechelen"/>
       </div>
     </div>  
 
@@ -130,13 +132,13 @@ export default {
     },
     getTextClass(index) {
       if(index === 0) {
-        return 'text-pink-600'
+        return 'text-pink-500'
       }
       if(index === 1) {
-        return 'text-teal-600'
+        return 'text-teal-500'
       }
       if(index === 2) {
-        return 'text-blue-600'
+        return 'text-blue-500'
       }
     }
   },
