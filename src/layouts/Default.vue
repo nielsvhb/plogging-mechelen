@@ -1,15 +1,15 @@
 <template>
     <div class="flex flex-col min-h-screen">
-      <header class="items-center py-8 bg-gray-50">
+      <header class="items-center bg-gray-800">
         <div class="mx-auto container justify-between flex">
-          <strong>
-            <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-          </strong>
-          <nav class="space-x-10">
-            <g-link to="/start">Start met ploggen</g-link>
-            <g-link to="/sensibiliseer">Zet ploggen in de kijker</g-link>
-            <g-link to="/faq">FAQ</g-link>
-            <g-link to="/contact">Contact</g-link>
+          <div class="py-2">
+            <g-link to="/"><g-image src="/logo.png" :alt="$static.metadata.siteName" class="w-40"></g-image></g-link>
+          </div>
+          <nav class="items-center text-gray-300 flex">
+            <g-link active-class="border-blue-500" class="px-5 border-transparent border-b-4 h-full flex items-center py-2" to="/start">Start met ploggen</g-link>
+            <g-link active-class="border-blue-500" class="px-5 border-transparent border-b-4 h-full flex items-center py-2" to="/sensibiliseer">Zet ploggen in de kijker</g-link>
+            <g-link active-class="border-blue-500" class="px-5 border-transparent border-b-4 h-full flex items-center py-2" to="/faq">FAQ</g-link>
+            <g-link active-class="border-blue-500" class="px-5 border-transparent border-b-4 h-full flex items-center py-2" to="/contact">Contact</g-link>
           </nav>
         </div>
       </header>
