@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col min-h-screen">
+    <div class="flex flex-col min-h-screen font-body">
       <header class="items-center bg-white pt-4 sm:pt-0">
         <div class="mx-auto container justify-between flex">
           <div class="py-2">

@@ -167,7 +167,7 @@ export default {
   .markdown-body {
     white-space: pre-wrap;
     color: rgb(55, 65, 81);
-    font-family: "ui-sans-serif", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Open Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 18px;
     line-height: 32px;
   }

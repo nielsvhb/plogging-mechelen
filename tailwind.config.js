@@ -11,6 +11,9 @@ module.exports = {
         fuchsia: colors.fuchsia,
         'light-blue': colors.lightBlue,
         cyan: colors.cyan
+      },
+      fontFamily: {
+        body: ['Open Sans']
       }
     },
     container: {
