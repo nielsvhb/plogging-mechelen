@@ -7,24 +7,31 @@
       @apply m-0
   }
   h1 {
-    @apply text-4xl text-blue-500;
+    @apply text-5xl md:text-4xl sm:text-3xl text-gray-700 font-bold;
   }
   h2 {
-    @apply text-xl text-blue-900;
+    @apply font-bold text-gray-700 tracking-widest text-2xl sm:text-xl sm:tracking-wide;
   }
-  p {
-    @apply text-lg text-gray-700
+  p, li {
+    @apply text-xl text-gray-600 leading-relaxed
   }
   .fade-enter-active,
-.fade-leave-active {
-  transition-duration: 0.3s;
-  transition-property: opacity;
-  transition-timing-function: ease;
-}
+  .fade-leave-active {
+    transition-duration: 0.3s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+  }
 
-.fade-enter,
-.fade-leave-active {
-  opacity: 0
-}
+  .fade-enter,
+  .fade-leave-active {
+    opacity: 0
+  }
+
+  .container {
+    max-width: 1660px;
+    @media (max-width: 1300px) { 
+      max-width: 1260px;
+    }
+  }
 }
 

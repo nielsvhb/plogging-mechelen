@@ -1,7 +1,7 @@
 <template>
 <Layout>
     <div class="mx-auto container py-20">
-        <h1 class="uppercase text-5xl font-bold mb-10 text-gray-600">Veelgestelde vragen</h1>
+        <h1 class="mb-6">Veelgestelde vragen</h1>
         <p v-if="!faqs.length">Geen veegestelde vragen gevonden.</p>
         <ul>
             <faq-box v-for="faq in faqs" :key="faq.id" :question="faq.question" :answer="faq.answer"></faq-box>
