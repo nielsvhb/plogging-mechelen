@@ -45,7 +45,7 @@
                 @submit.prevent="handleSubmit()" 
                   name="emails"
                   method="post"
-                  data-netlify="true">
+                  data-netlify-honeypot="bot-field">
                   <input name="email" type="email" v-model="email" class="rounded px-4 py-2 w-80" placeholder="E-mailadres" />
                   <button type="submit" class="rounded bg-indigo-500 text-white py-2 px-8 tracking-wide font-semibold inline-block text-lg"><i class="fas fa-paper-plane"></i></button>
                 </form>
