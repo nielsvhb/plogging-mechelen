@@ -3,9 +3,9 @@
     <div class="mx-auto container flex py-28 lg:block md:py-20 sm:py-12">
       <div class="flex-col w-1/2 lg:w-full">
         <h1 class="mb-4">{{$page.homepage.title}}</h1>
-        <p class="leading-relaxed text-gray-500 text-2xl">{{$page.homepage.mission}}</p>
+        <p class="leading-relaxed text-gray-500 text-2xl sm:text-xl">{{$page.homepage.mission}}</p>
         <div class="mt-10">
-          <g-link to="/start" class="rounded bg-indigo-500 text-white py-2 px-8 tracking-wide font-semibold inline-block text-lg">{{$page.homepage.ButtonLabel}}  <i class="fas fa-arrow-right ml-2"></i></g-link>
+          <g-link to="/start" class="rounded bg-light-blue-500 text-white py-2 px-8 tracking-wide font-semibold inline-block text-lg">{{$page.homepage.ButtonLabel}}  <i class="fas fa-arrow-right ml-2"></i></g-link>
         </div>
 
         <div class="mt-24">
@@ -13,10 +13,10 @@
 
           <div class="mt-4 space-y-2 text-gray-500">
             <div class="text-2xl font-bold">
-              <i class="fas fa-running text-xl text-indigo-500 mr-3"></i> {{distance}} km
+              <i class="fas fa-running text-xl text-light-blue-500 mr-3"></i> {{distance}} km
             </div>
             <div class="text-2xl font-bold">
-              <i class="fas fa-trash text-xl text-indigo-500 mr-3"></i> {{weight}} kg
+              <i class="fas fa-trash text-xl text-light-blue-500 mr-3"></i> {{weight}} kg
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <div class="mx-auto py-20 my-20 relative xl:my-0">
+    <div class="mx-auto py-20 relative">
       <div class="absolute h-64 min-w-full bg-blue-50 -rotate-3 transform top-40 -left-10 -right-10 opacity-70"></div>
       <div class="absolute h-64 min-w-full bg-blue-50 -rotate-3 transform top-60 -left-10 -right-10 opacity-70"></div>
       <div class="relative">
@@ -38,14 +38,14 @@
           <h2 class="">Laatste nieuws</h2>
         </div>
         <div class="flex xl:block xl:space-y-8">
-          <div v-for="(article, index) in articles" :key="index" class="mx-8 rounded-xl shadow bg-white flex flex-col">
+          <div v-for="(article, index) in articles" :key="index" class="mx-4 rounded-xl shadow bg-white flex flex-col sm:mx-4">
             <div class="flex items-center px-8 pt-8">
-              <i class="fas fa-bullhorn mr-2 opacity-50 w-8" :class="getTextClass(index)"></i><h3 class="font-semibold text-2xl tracking-wide" :class="getTextClass(index)">{{article.title}}</h3>
+              <i class="fas fa-bullhorn mr-2 opacity-50 w-8 text-light-blue-500"></i><h3 class="text-light-blue-500">{{article.title}}</h3>
             </div>
             <p class="text-gray-600 px-8 pt-4 leading-8 text-lg mb-5">
               {{article.content}}
             </p>
-            <div class="mt-auto flex items-center space-x-4 p-6 md:px-10 md:py-6 bg-gradient-to-br rounded-b-xl leading-6 font-semibold text-white" :class="getBgClass(index)">
+            <div class="mt-auto flex items-center space-x-4 px-6 py-4 bg-light-blue-100 text-gray-500 md:px-10 md:py-6 sm:px-6 sm:py-3 rounded-b-xl leading-6 font-semibold">
               {{article.date}}
             </div>
           </div>
@@ -97,6 +97,12 @@
 import gsap from 'gsap';
 
 export default {
+   metaInfo: {
+    title: 'Welkom bij Plogging Mechelen',
+    meta: [
+        { name: 'description', content: 'Plogging/ploggen is zwerfvuil verzamelen terwijl je wandelt of jogt.' }
+    ]
+  },
   data() {
     return {
         tweenedDistance: 0,
@@ -126,30 +132,6 @@ export default {
     },
     distance() {
         return this.tweenedDistance.toFixed(0);
-    }
-  },
-  methods:{
-    getBgClass(index) {
-      if(index === 0) {
-        return 'from-light-blue-400 to-indigo-500'
-      }
-      if(index === 1) {
-        return 'from-fuchsia-500 to-purple-600'
-      }
-      if(index === 2) {
-        return 'from-cyan-400 to-light-blue-500'
-      }
-    },
-    getTextClass(index) {
-      if(index === 0) {
-        return 'text-light-blue-500'
-      }
-      if(index === 1) {
-        return 'text-fuchsia-500'
-      }
-      if(index === 2) {
-        return 'text-cyan-500'
-      }
     }
   },
   mounted() {

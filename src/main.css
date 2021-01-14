@@ -12,10 +12,13 @@
     @apply text-5xl md:text-4xl sm:text-3xl text-gray-700 font-bold;
   }
   h2 {
-    @apply font-bold text-gray-700 tracking-widest text-2xl sm:text-xl sm:tracking-wide;
+    @apply font-bold text-gray-700 tracking-wider text-2xl sm:text-xl sm:tracking-wide;
+  }
+  h3 {
+    @apply font-semibold text-xl tracking-wide sm:text-lg
   }
   p, li {
-    @apply text-xl text-gray-600 leading-relaxed
+    @apply text-xl text-gray-600 leading-relaxed  sm:text-lg
   }
   .fade-enter-active,
   .fade-leave-active {

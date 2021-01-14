@@ -17,7 +17,12 @@ module.exports = {
       }
     },
     container: {
-      padding: '2rem',
+      padding: {
+        DEFAULT: '1rem',
+        md: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+      }
     },
     screens: {
       '2xl': {'max': '1535px'},

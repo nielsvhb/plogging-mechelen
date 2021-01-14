@@ -6,15 +6,15 @@
             <g-link to="/"><g-image src="/logo.png" :alt="$static.metadata.siteName" class="w-44"></g-image></g-link>
           </div>
 
-           <a href="" @click.prevent="toggleMenu()" class="items-center md:flex hidden text-indigo-500 p-8 pr-2">
+           <a href="" @click.prevent="toggleMenu()" class="items-center md:flex hidden text-indlight-blueigo-500 p-8 pr-2">
              <i class="fas fa-bars fa-2x"></i>
            </a>
 
-          <nav class="items-center text-gray-600 flex text-xl" :class="{'md:flex md:flex-col absolute bg-white w-full top-28 text-center left-0 shadow-lg': menuOpen, 'md:hidden': !menuOpen}">
-            <g-link active-class="text-indigo-500" class="px-8 lg:px-4 lg:text-base md:text-lg h-full flex items-center py-2 md:py-4" to="/start">Start met ploggen</g-link>
-            <g-link active-class="text-indigo-500" class="px-8 lg:px-4 lg:text-base md:text-lg h-full flex items-center py-2 md:py-4" to="/sensibiliseer">Zet ploggen in de kijker</g-link>
-            <g-link active-class="text-indigo-500" class="px-8 lg:px-4 lg:text-base md:text-lg h-full flex items-center py-2 md:py-4" to="/faq">FAQ</g-link>
-            <g-link active-class="text-indigo-500" class="px-8 lg:px-4 lg:text-base md:text-lg h-full flex items-center py-2 md:py-4" to="/contact">Contact</g-link>
+          <nav class="items-center text-gray-600 flex text-xl" :class="{'md:flex md:flex-col absolute bg-white w-full top-28 text-center left-0 shadow-lg z-10 py-10': menuOpen, 'md:hidden': !menuOpen}">
+            <g-link active-class="text-light-blue-500" class="px-8 lg:px-4 lg:text-base md:text-lg h-full flex items-center py-2 md:py-4" to="/start">Start met ploggen</g-link>
+            <g-link active-class="text-light-blue-500" class="px-8 lg:px-4 lg:text-base md:text-lg h-full flex items-center py-2 md:py-4" to="/sensibiliseer">Zet ploggen in de kijker</g-link>
+            <g-link active-class="text-light-blue-500" class="px-8 lg:px-4 lg:text-base md:text-lg h-full flex items-center py-2 md:py-4" to="/faq">FAQ</g-link>
+            <g-link active-class="text-light-blue-500" class="px-8 lg:px-4 lg:text-base md:text-lg h-full flex items-center py-2 md:py-4" to="/contact">Contact</g-link>
           </nav>
         </div>
       </header>
@@ -47,7 +47,7 @@
                   method="post"
                   data-netlify-honeypot="bot-field">
                   <input name="email" type="email" v-model="email" class="rounded px-4 py-2 w-80" placeholder="E-mailadres" />
-                  <button type="submit" class="rounded bg-indigo-500 text-white py-2 px-8 tracking-wide font-semibold inline-block text-lg"><i class="fas fa-paper-plane"></i></button>
+                  <button type="submit" class="rounded bg-light-blue-500 text-white py-2 px-8 tracking-wide font-semibold inline-block text-lg"><i class="fas fa-paper-plane"></i></button>
                 </form>
                 <p v-else class="text-gray-400">
                   Bedankt voor je registratie.
@@ -72,6 +72,11 @@ query {
   import axios from 'axios';
 
   export default {
+    metaInfo: {
+      meta: [
+        { charset: 'utf-8' }
+      ]
+    },
     data() {
       return {
         email: '',
