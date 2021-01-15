@@ -2,7 +2,7 @@
     <Layout>
         <div class="mx-auto container py-20">
                 <h1 class="mb-6">Zet ploggen in de kijker</h1>
-                <div class="flex sm:block">
+                <div class="flex sm:block space-x-4">
                     <div class="w-2/3 sm:w-full">
                     <p>
                         Misschien is het in de kijker zetten van ploggen wel belangrijker dan het ploggen zelf. Mechelen en omgeving zo proper mogelijk maken doe je ook door andere mensen aan te zetten om mee te ploggen. 

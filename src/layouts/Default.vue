@@ -40,12 +40,10 @@
               <div class="flex-col w-1/2 sm:w-full">
                 <h2 class="text-gray-300 mb-4">Schrijf je in op de nieuwsbrief!</h2>
                 <form 
-                v-if="!isSent"
-                class="flex" 
-                @submit.prevent="handleSubmit()" 
-                  name="emails"
-                  method="post"
-                  data-netlify-honeypot="bot-field">
+                  v-if="!isSent"
+                  class="flex" 
+                  @submit.prevent="handleSubmit()" 
+                  method="post">
                   <input name="email" type="email" v-model="email" class="rounded px-4 py-2 w-80" placeholder="E-mailadres" />
                   <button type="submit" class="rounded bg-light-blue-500 text-white py-2 px-8 tracking-wide font-semibold inline-block text-lg"><i class="fas fa-paper-plane"></i></button>
                 </form>
@@ -93,9 +91,8 @@ query {
           return;
 
         await axios.post(
-          "/",
+          "https://formspree.io/f/xeqpvwde",
           this.encode({
-            "form-name": "emails",
             email: this.email
           }),
           {

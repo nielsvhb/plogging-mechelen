@@ -3,7 +3,7 @@
     <div class="mx-auto container py-20">
         <h1 class="mb-10">Start met ploggen</h1>
         <div class="flex sm:block">
-            <div class="w-2/3 sm:w-full">
+            <div class="w-2/3 sm:w-full space-x-4">
                 <ul>
                     <li class="relative">
                         <span class="rounded-full absolute w-8 h-8 bg-light-blue-50 text-light-blue-500 text-center font-bold flex items-center justify-center">1</span> 
