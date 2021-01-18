@@ -89,6 +89,11 @@
       TotalWeight,
       TotalDistance,
       About
+    },
+    allStrapiNewsArticles {
+      edges {
+          node{Title, Content, Date}
+        }
     }
 }
 </page-query>
@@ -107,23 +112,7 @@ export default {
     return {
         tweenedDistance: 0,
         tweenedWeight: 0,
-        articles: [
-          {
-            title: 'Snelrechtprocedure',
-            date: '12 januari 2021',
-            content: 'Momenteel bekijken we of het mogelijk is om jonge mensen, die door snelrechtprocedure voor kleine feiten een dienstverlening willen doen, kunnen inschakelen voor het ploggen te Mechelen. Dit is een hart onder de riem van alle ploggers die op sommige plaatsen merken dat het resultaat van hun vrijwilligerswerk af en toe van korte duur is. De Staat denkt en werkt mee en ook als het gaat over repressie en educatie en dat juichen we toe! Samen voor een nog properder Mechelen.'
-          },
-          {
-            title: 'Samenwerking met Stad Mechelen',
-            date: '12 januari 2021',
-            content: 'Momenteel zijn er gesprekken tussen de app ontwikkelaars van We Plog, Plogging Mechelen en Stad Mechelen. Het zou mooi zijn mocht Stad Mechelen dit burgerinitiatief steunen en het beheer van de app in handen nemen op het Mechels grondgebied. Op deze manier kunnen we beter inspelen op de hotspots waar er regelmatiger moet geplogd worden. Dit betekent concreet dat Stad Mechelen bepaalde straten opnieuw sneller kan ROOD kleuren zodat het voor iedereen zichtbaar wordt op de app. Ook zou het goed zijn dat de stadsdiensten met dezelfde app zouden werken want op die manier ziet iedereen nog beter waar er dient schoongemaakt te worden. Kortom Mechelen zou nog efficiënter kunnen schoongemaakt worden als Stad Mechelen de app beheert.'
-          },
-          {
-            title:'Peters en meters',
-            date: '12 januari 2021',
-            content: 'We bekijken op dit ogenblik met Stad Mechelen of de 150 Mechelse vrijwilligers ‘Peters en Meters’, die momenteel via de organisatie Mooimakers een stuk straat hebben geclaimd en zich over de properheid ontfermen van hun geclaimd stuk, ook op de hoogte kunnen worden gebracht van de app WePlog. Als deze Mechelaars de app zullen gebruiken wordt ook hun werk zichtbaar en ploggen we met z’n allen nog efficiënter.'
-          }
-        ]
+        articles: []
     };
   },
   computed: {
@@ -138,6 +127,16 @@ export default {
     const duration = 3.5;
     gsap.to(this.$data, { duration, tweenedWeight: this.$page.homepage.TotalWeight });
     gsap.to(this.$data, { duration, tweenedDistance: this.$page.homepage.TotalDistance });
+
+    const articles = this.$page.allStrapiNewsArticles.edges.map(edge => {
+          return {
+              title: edge.node.Title,
+              content: edge.node.Content,
+              date: edge.node.Date.replace(/(\d{4})-(\d{2})-(\d{2})$/, "$3/$2/$1")
+          };
+      }).sort((a, b) => parseInt(a.date) - parseInt(b.date));
+
+      this.articles = articles.slice(0, 3);
   }
 }
 </script>

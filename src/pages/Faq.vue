@@ -13,7 +13,7 @@
 <page-query>
 query {
     allStrapiFaq {
-    edges {
+        edges {
             node {
                 id,
                 Question, 
