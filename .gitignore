@@ -7,9 +7,6 @@ dist
 .env
 .env.*
 
-*.MOV
-*.mov
-
 
 # Local Netlify folder
 .netlify
