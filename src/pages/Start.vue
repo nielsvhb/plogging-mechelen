@@ -1,6 +1,6 @@
 <template>
 <Layout>
-    <div class="mx-auto container py-20">
+     <div class="mx-auto container py-28 md:py-12 sm:py-10">
         <h1 class="mb-10">Start met ploggen</h1>
         <div class="flex sm:block">
             <div class="w-2/3 sm:w-full space-x-4">
@@ -35,11 +35,11 @@
                 </ul>
             </div>
             <div class="w-1/3 relative sm:w-full sm:hidden">
-                <div class="absolute overflow-auto rounded-2xl shadow-2xl right-0 top-16" >
+                <div class="absolute overflow-auto rounded-2xl shadow-2xl right-0 top-16 max-w-full" >
                     <g-image src="~/assets/plogging3.jpg" width="450" class="block" alt="Plogging Mechelen" />
                 </div>
 
-                <div class="absolute overflow-auto rounded-2xl shadow-2xl top-2/3 sm:hidden">
+                <div class="absolute overflow-auto rounded-2xl shadow-2xl top-2/3 sm:hidden max-w-full">
                     <g-image src="~/assets/plogging4.jpg" width="400" class="block" alt="Plogging Mechelen" />
                 </div>
             </div>

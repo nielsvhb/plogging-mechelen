@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="mx-auto container flex py-28 lg:block md:py-20 sm:py-12">
+    <div class="mx-auto container flex py-28 lg:block md:py-12 sm:py-10">
       <div class="flex-col w-1/2 lg:w-full">
         <h1 class="mb-4">{{$page.homepage.title}}</h1>
         <p class="leading-relaxed text-gray-500 text-2xl sm:text-xl">{{$page.homepage.mission}}</p>
@@ -54,7 +54,7 @@
     </div>
 
     <div class="mx-auto container relative">
-      <div class=" overflow-auto rounded-2xl shadow absolute sm:relative left-8 top-8 md:-top-10 md:left-auto" >
+      <div class=" overflow-auto rounded-2xl shadow absolute sm:relative left-8 top-8 md:-top-10 md:left-auto max-w-full" >
           <g-image src="~/assets/plogging1.jpg" width="560" class="block" alt="Plogging Mechelen"/>
       </div>
       <div class="py-40 w-1/3 xl:w-1/2 lg:w-2/3 md:w-3/4 sm:w-full md:py-10 sm:pt-0 z-20 mx-auto relative ">
@@ -65,7 +65,7 @@
           </p>
         </div>
       </div>
-      <div class="absolute overflow-auto rounded-2xl shadow right-10 top-20">
+      <div class="absolute overflow-auto rounded-2xl shadow right-10 top-20 max-w-full">
         <g-image src="~/assets/plogging2.jpg" width="320" class="block md:hidden" alt="Plogging Mechelen"/>
       </div>
     </div>  

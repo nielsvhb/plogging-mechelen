@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <div class="mx-auto container py-20">
+       <div class="mx-auto container py-28 md:py-12 sm:py-10">
                 <h1 class="mb-6">Contacteer ons</h1>
                 <p>
                     Plogging Mechelen is van Mechelaars voor Mechelaars. Iedereen is welkom.

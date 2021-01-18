@@ -1,6 +1,6 @@
 <template>
 <Layout>
-    <div class="mx-auto container py-20">
+    <div class="mx-auto container py-28 md:py-12 sm:py-10">
         <h1 class="mb-6">Veelgestelde vragen</h1>
         <p v-if="!faqs.length">Geen veegestelde vragen gevonden.</p>
         <ul>

@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <div class="mx-auto container py-20">
+        <div class="mx-auto container py-28 md:py-12 sm:py-10">
                 <h1 class="mb-6">Zet ploggen in de kijker</h1>
                 <div class="flex sm:block space-x-4">
                     <div class="w-2/3 sm:w-full">
@@ -55,11 +55,11 @@
                         </ul>
                     </div>
                     <div class="w-1/3 relative sm:w-full sm:pt-10">
-                        <div class="absolute overflow-auto rounded-2xl shadow-2xl right-0 top-8  sm:right-auto" >
+                        <div class="absolute overflow-auto rounded-2xl shadow-2xl right-0 top-8  sm:right-auto max-w-full" >
                             <g-image src="~/assets/plogging7.jpg" width="400" class="block" alt="Plogging Mechelen" />
                         </div>
 
-                        <div class="absolute overflow-auto rounded-2xl shadow-2xl top-1/2 left-8 sm:hidden">
+                        <div class="absolute overflow-auto rounded-2xl shadow-2xl top-1/2 left-8 sm:hidden max-w-full">
                             <g-image src="~/assets/plogging8.jpg" width="400" class="block" alt="Plogging Mechelen" />
                         </div>
                     </div>
