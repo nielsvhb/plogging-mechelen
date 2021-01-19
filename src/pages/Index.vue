@@ -115,15 +115,15 @@ export default {
         tweenedWeight: 0,
         articles: [],
         videoOptions: {
-				autoplay: true,
-				controls: true,
-				sources: [
-					{
-						src: "/intro.MOV",
-            type: "video/mp4"
-					}
-				]
-			}
+          autoplay: 'muted',
+          controls: true,
+          sources: [
+            {
+              src: "/intro.MOV",
+              type: "video/mp4"
+            }
+          ]
+        }
     };
   },
   computed: {
