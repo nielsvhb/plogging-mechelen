@@ -119,7 +119,7 @@ export default {
           controls: true,
           sources: [
             {
-              src: "/plogging-intro.mp4",
+              src: "/intro-vid.mp4",
               type: "video/mp4"
             }
           ]
