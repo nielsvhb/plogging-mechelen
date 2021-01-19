@@ -23,10 +23,7 @@
       </div>
       
       <div class="flex-col w-1/2 flex lg:w-full">
-        <video width="640" height="520" controls class="ml-auto lg:ml-0 lg:mt-5 sm:mt-12">
-          <source src="/plogging-intro.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="ml-auto lg:ml-0 lg:mt-5 sm:mt-12 max-w-full"><video-player :options="videoOptions"/></div>
       </div>
     </div>
 
@@ -100,6 +97,7 @@
 
 <script>
 import gsap from 'gsap';
+import VideoPlayer from '../components/video-player.vue';
 
 export default {
    metaInfo: {
@@ -108,11 +106,24 @@ export default {
         { name: 'description', content: 'Plogging/ploggen is zwerfvuil verzamelen terwijl je wandelt of jogt.' }
     ]
   },
+  components: {
+		VideoPlayer
+	},
   data() {
     return {
         tweenedDistance: 0,
         tweenedWeight: 0,
-        articles: []
+        articles: [],
+        videoOptions: {
+				autoplay: true,
+				controls: true,
+				sources: [
+					{
+						src: "/intro.MOV",
+            type: "video/mp4"
+					}
+				]
+			}
     };
   },
   computed: {

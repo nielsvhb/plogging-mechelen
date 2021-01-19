@@ -12,4 +12,9 @@ export default function (Vue, { router, head, isClient }) {
     src: 'https://kit.fontawesome.com/03fca1712c.js',
     body: true
   });
+
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://unpkg.com/video.js@7/dist/video-js.min.css'
+})
 }
