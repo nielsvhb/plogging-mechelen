@@ -23,10 +23,7 @@
                      </li>
                     <li>
                         <ul class="pl-10">
-                            <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-light-blue-500"></i><a href="http://makers.mechelen.be" target="_blank" class="text-light-blue-400 font-semibold">makers.mechelen.be</a></li>
-                            <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-light-blue-500"></i>Klik op “samen doen”</li>
-                            <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-light-blue-500"></i>Onder de rubriek ‘Stad om te Zoenen’ klik je vervolgens op “Peters en Meters”</li>
-                            <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-light-blue-500"></i>Vul het formulier in door eerst op het rode kader te klikken “IK WIL PETER OF METER WORDEN”</li>
+                            <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-light-blue-500"></i>Vul <a href="https://www.mechelen.be/eloket-peter-meter-openbaar-domein" target="_blank" class="text-light-blue-400 font-semibold">op deze website</a> het formulier in.</li>
                             <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-light-blue-500"></i>Nadat je het formulier hebt ingevuld klik je op “VOLGEND”</li>
                             <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-light-blue-500"></i>Opgelet! Je dient in het volgend scherm nog te klikken op “VERZENDEN”</li>
                             <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-light-blue-500"></i>U krijgt na max 1 werkdag een email met de instructies mbt het afhalen van uw materiaal. Indien u geen bevestigingsmail krijgt, <g-link to="/contact" class="text-light-blue-400 font-semibold">contacteer Plogging Mechelen</g-link>.</li>

@@ -6,7 +6,7 @@
                     Plogging Mechelen is van Mechelaars voor Mechelaars. Iedereen is welkom.
                 </p>
                 <div class="text-gray-500 leading-loose font-semibold mt-5 text-xl">
-                   <div><i class="w-8 fas text-light-blue-500 mr-2 fa-envelope"></i>plogging.mechelen@gmail.com</div>
+                   <div><i class="w-8 fas text-light-blue-500 mr-2 fa-envelope"></i><a href="mailto:plogging.mechelen@gmail.com" target="_blank">plogging.mechelen@gmail.com</a></div>
                    <div><i class="w-8 fas text-light-blue-500 mr-2 fa-phone"></i>+324 75 64 22 87</div>
                    <div><i class="w-8 fab text-light-blue-500 mr-2 fa-facebook"></i><a href="https://www.facebook.com/ploggingmechelen" target="_blank" class="">Volg ons op Facebook</a></div>
                    <div><i class="w-8 fab text-light-blue-500 mr-2 fa-instagram"></i><a href="https://www.instagram.com/plogging_mechelen/" target="_blank" class="">Volg ons op Instagram</a></div>
