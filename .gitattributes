@@ -1,2 +1,2 @@
 *.MOV filter=lfs diff=lfs merge=lfs -text
-static/intro-vid.mp4 filter=lfs diff=lfs merge=lfs -text
+static/website-intro.mp4 filter=lfs diff=lfs merge=lfs -text

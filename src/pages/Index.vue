@@ -119,7 +119,7 @@ export default {
           controls: true,
           sources: [
             {
-              src: "/intro-vid.mp4",
+              src: "/website-intro.mp4",
               type: "video/mp4"
             }
           ]
