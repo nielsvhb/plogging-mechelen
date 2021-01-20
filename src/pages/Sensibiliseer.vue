@@ -5,7 +5,7 @@
                 <div class="flex sm:block space-x-4">
                     <div class="w-2/3 sm:w-full">
                     <p>
-                        Misschien is het in de kijker zetten van ploggen wel belangrijker dan het ploggen zelf. Mechelen en omgeving zo proper mogelijk maken doe je ook door andere mensen aan te zetten om mee te ploggen. 
+                        Misschien is het in de kijker zetten van ploggen even belangrijk als het ploggen zelf. Mechelen en omgeving zo proper mogelijk maken doe je ook door andere mensen aan te zetten om mee te ploggen. 
                         Stel je voor dat iedere plogger 1 of 2 andere voorbijgangers, buren, vrienden, familie kan aanzetten tot ploggen, hoe proper zou Mechelen dan zijn? Welk effect zouden die vele ploggers op hun beurt 
                         hebben op het stimuleren van het gedrag van anderen? Zichtbaarheid is vaak de beste manier om anderen te stimuleren om ook te ploggen en daar kan jij aan mee helpen. Hiervoor werden er materiaal en 
                         tools ontwikkeld dat je bij Plogging Mechelen kan bekomen of gebruiken.

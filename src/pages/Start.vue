@@ -19,7 +19,7 @@
 
                      <li class="relative mt-20">
                          <span class="rounded-full absolute w-8 h-8 bg-light-blue-50 text-light-blue-500 text-center font-bold flex items-center justify-center">2</span> 
-                        <span class="inline-block pl-10 font-semibold">Bestel uw GRATIS vuilzakken, vuilgrijper, handschoenen... via</span>
+                        <span class="inline-block pl-10 font-semibold">Bestel uw GRATIS vuilzakken, vuilgrijper, handschoenen:</span>
                      </li>
                     <li>
                         <ul class="pl-10">

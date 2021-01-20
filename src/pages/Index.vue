@@ -68,7 +68,20 @@
     </div>  
 
     <div class="mx-auto container text-xl">
-      <vue-simple-markdown :source="$page.homepage.About.trim()"></vue-simple-markdown>
+      <div class="flex sm:block">
+        <vue-simple-markdown :source="$page.homepage.About.trim()"></vue-simple-markdown>
+        <div class="ml-10 sm:ml-0 sm:mt-6">
+          <div class=" overflow-auto rounded-2xl shadow  max-w-full lg:w-56 md:w-40 sm:w-1/2">
+            <g-image src="~/assets/xavier.jpg" class="block" alt="Xavier Cloetens"/>
+          </div>
+          <p class="text-base mt-3">
+            <span class="font-semibold">Xavier Cloetens:</span> <em> ”Met gebundelde krachten kunnen we heel wat bereiken, zoveel is duidelijk.”</em>
+          </p>
+        </div>
+      </div>
+      <div class="mt-10">
+        <vue-simple-markdown :source="$page.homepage.About2.trimLeft()"></vue-simple-markdown>
+      </div>
     </div>
   
   </Layout>
@@ -85,7 +98,8 @@
       ButtonLabel,
       TotalWeight,
       TotalDistance,
-      About
+      About,
+      About2
     },
     allStrapiNewsArticles {
       edges {
