@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="mx-auto container flex py-28 lg:block md:py-12 sm:py-10">
+    <div class="mx-auto container flex py-28 lg:block md:py-12 sm:py-10 space-x-5 lg:space-x-0">
       <div class="flex-col w-1/2 lg:w-full">
         <h1 class="mb-4">{{$page.homepage.title}}</h1>
         <p class="leading-relaxed text-gray-500 text-2xl sm:text-xl">{{$page.homepage.mission}}</p>
@@ -22,8 +22,10 @@
         </div>
       </div>
       
-      <div class="flex-col w-1/2 flex lg:w-full">
-        <div class="ml-auto lg:ml-0 lg:mt-5 sm:mt-12 max-w-full"><video-player :options="videoOptions"/></div>
+      <div class="flex-col w-1/2 lg:w-full">
+        <div class="ml-auto lg:ml-0 lg:mt-5 sm:mt-12 max-w-full">
+          <video-player :options="videoOptions"></video-player>
+        </div>
       </div>
     </div>
 
@@ -131,7 +133,8 @@ export default {
         videoOptions: {
           autoplay: 'muted',
           controls: true,
-          responsive: true,
+          fluid: true,
+          playsinline: true,
           sources: [
             {
               src: "/website-intro.mp4",

@@ -35,9 +35,9 @@ export default {
 
 <style>
     .video-js {
-        width: 700px;
+        /* width: 700px;
         height: 394px;
         max-width: 100%;
-        max-height: 100%;
+        max-height: 100%; */
     }
 </style>
