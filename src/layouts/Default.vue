@@ -3,7 +3,7 @@
       <header class="items-center bg-white pt-4 sm:pt-0">
         <div class="mx-auto container justify-between flex">
           <div class="py-2">
-            <g-link to="/"><g-image src="/logo.png" :alt="$static.metadata.siteName" class="w-44"></g-image></g-link>
+            <g-link to="/"><g-image src="/logo.png" :alt="$static.metadata.siteName" class="w-80 lg:w-60 md:w-44"></g-image></g-link>
           </div>
 
            <a href="" @click.prevent="toggleMenu()" class="items-center md:flex hidden text-indlight-blueigo-500 p-8 pr-2">
