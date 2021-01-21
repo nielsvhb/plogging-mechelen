@@ -137,7 +137,7 @@ export default {
           playsinline: true,
           sources: [
             {
-              src: "/website-intro.mp4",
+              src: "//ploggingmechelen.be/website-intro.mp4",
               type: "video/mp4"
             }
           ]
