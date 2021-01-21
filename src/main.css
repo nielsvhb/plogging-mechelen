@@ -8,6 +8,9 @@
   body {
       @apply m-0
   }
+  img {
+    max-width: 100%;
+  }
   h1 {
     @apply text-5xl md:text-4xl sm:text-3xl text-gray-700 font-bold;
   }
