@@ -24,7 +24,9 @@
       
       <div class="flex-col w-1/2 lg:w-full">
         <div class="ml-auto lg:ml-0 lg:mt-5 sm:mt-12 max-w-full">
-          <video-player :options="videoOptions"></video-player>
+          <video controls>
+            <source src="/website-intro.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
@@ -137,7 +139,7 @@ export default {
           playsinline: true,
           sources: [
             {
-              src: "//ploggingmechelen.be/website-intro.mp4",
+              src: "/website-intro.mp4",
               type: "video/mp4"
             }
           ]
