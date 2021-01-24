@@ -16,6 +16,16 @@
                             <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-light-blue-500"></i>Op “WePlog” zie je in welke straten er reeds werd geplogd. ROOD = nog niet geplogd en GROEN = reeds geplogd.</li>
                         </ul>
                     </li>
+                    <li class="ml-5 mt-3">
+                        <div class="flex items-center">
+                            <a href="https://play.google.com/store/apps/details?id=com.nebulae.weplog" target="_blank">
+                                <img src="/android-store.png" width="200">
+                            </a>
+                            <a href="https://apps.apple.com/be/app/weplog/id1476422802?l=nl" target="_blank">
+                                <img src="/apple-store.png" width="170">
+                            </a>
+                        </div>
+                    </li>
 
                      <li class="relative mt-20">
                          <span class="rounded-full absolute w-8 h-8 bg-light-blue-50 text-light-blue-500 text-center font-bold flex items-center justify-center">2</span> 

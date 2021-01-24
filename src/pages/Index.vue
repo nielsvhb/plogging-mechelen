@@ -9,7 +9,7 @@
         </div>
 
         <div class="mt-24">
-          <div class="text-gray-400 uppercase font-semibold">Ploggen in cijfers</div>
+          <div class="text-gray-400 uppercase font-semibold">Ploggen in cijfers sinds 1 oktober 2020</div>
 
           <div class="mt-4 space-y-2 text-gray-500">
             <div class="text-2xl font-bold">
