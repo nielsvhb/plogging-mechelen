@@ -22,7 +22,7 @@
                                 <img src="/android-store.png" width="200">
                             </a>
                             <a href="https://apps.apple.com/be/app/weplog/id1476422802?l=nl" target="_blank">
-                                <img src="/apple-store.png" width="170">
+                                <img src="/apple-store.png" width="150">
                             </a>
                         </div>
                     </li>
@@ -42,14 +42,18 @@
                 </ul>
             </div>
             <div class="w-1/3 relative sm:w-full sm:hidden">
-                <div class="absolute overflow-auto rounded-2xl shadow-2xl right-0 top-16 max-w-full" >
-                    <g-image src="~/assets/plogging3.jpg" width="450" class="block" alt="Plogging Mechelen" />
+                <div class="absolute overflow-auto right-0 top-16 max-w-full sm:relative" >
+                    <g-image src="~/assets/plogging3.jpg" width="450" class="block rounded-2xl shadow-2xl " alt="Plogging Mechelen" />
                 </div>
 
-                <div class="absolute overflow-auto rounded-2xl shadow-2xl top-2/3 sm:hidden max-w-full">
-                    <g-image src="~/assets/plogging4.jpg" width="400" class="block" alt="Plogging Mechelen" />
+                <div class="absolute overflow-auto  top-2/3 sm:hidden max-w-full">
+                    <g-image src="~/assets/plogging4.jpg" width="400" class="block rounded-2xl shadow-2xl " alt="Plogging Mechelen" />
                 </div>
             </div>
+        </div>
+        <div class="mt-20 flex items-start justify-around space-x-5">
+            <g-image src="~/assets/plogging11.jpg" class="w-1/3 sm:w-1/2 rounded-2xl" alt="Plogging Mechelen" />
+            <g-image src="~/assets/plogging13.jpg" class="w-1/3 sm:w-1/2 rounded-2xl" alt="Plogging Mechelen" />
         </div>
     </div>
   </Layout>
