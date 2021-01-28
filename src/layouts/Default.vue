@@ -91,7 +91,7 @@ query {
           return;
 
         await axios.post(
-          "https://formspree.io/f/xeqpvwde",
+          "https://formspree.io/f/xyyboabw",
           this.encode({
             email: this.email
           }),
