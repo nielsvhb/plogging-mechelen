@@ -36,13 +36,13 @@
        <h2 class="uppercase">Partners</h2>
       <div class="flex items-center justify-center space-x-20 sm:space-x-10">
          <a href="https://www.river-cleanup.org//" target="_blank" class="w-52 h-40 flex items-center justify-center">
-             <img src="partners/river.png" class="max-w-full max-h-full">
+             <img src="partners/river.png" class="max-w-full max-h-full" alt="River Cleanup">
         </a>
         <a href="https://vandievel.eu/" target="_blank" class="w-52 h-40 flex items-center justify-center">
-             <img src="partners/logo-van-dievel.jpg" class="max-w-full max-h-full">
+             <img src="partners/logo-van-dievel.jpg" class="max-w-full max-h-full" alt="Van Dievel Transport">
         </a>
          <a href="https://www.cookiesandclicks.be/" target="_blank" class="w-52 h-40 flex items-center justify-center">
-             <img src="partners/cookies-en-clicks.png" class="max-w-full max-h-full">
+             <img src="partners/cookies-en-clicks.png" class="max-w-full max-h-full" alt="Cookies and Clicks">
         </a>
       </div>
     </div>
