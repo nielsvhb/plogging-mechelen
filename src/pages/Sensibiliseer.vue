@@ -12,7 +12,7 @@
                         </p>
                         <div class="my-6">
                             <div class="text-gray-600 font-semibold">Gesponsord door Vervoer Van Dievel</div>
-                            <img src="logo-van-dievel.jpg" width="350">
+                            <img src="partners/logo-van-dievel.jpg" width="350">
                         </div>
                         <ul class="mt-10 space-y-2">
                             <li>

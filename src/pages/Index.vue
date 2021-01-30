@@ -31,11 +31,27 @@
       </div>
     </div>
 
+    <!-- partners -->
+    <div class="mx-auto container text-center">
+       <h2 class="uppercase">Partners</h2>
+      <div class="flex items-center justify-center space-x-20 sm:space-x-10">
+         <a href="https://www.river-cleanup.org//" target="_blank" class="w-52 h-40 flex items-center justify-center">
+             <img src="partners/river.png" class="max-w-full max-h-full">
+        </a>
+        <a href="https://vandievel.eu/" target="_blank" class="w-52 h-40 flex items-center justify-center">
+             <img src="partners/logo-van-dievel.jpg" class="max-w-full max-h-full">
+        </a>
+         <a href="https://www.cookiesandclicks.be/" target="_blank" class="w-52 h-40 flex items-center justify-center">
+             <img src="partners/cookies-en-clicks.png" class="max-w-full max-h-full">
+        </a>
+      </div>
+    </div>
+
     <div class="mx-auto py-20 relative">
       <div class="absolute h-64 min-w-full bg-blue-50 -rotate-3 transform top-40 -left-10 -right-10 opacity-70"></div>
       <div class="absolute h-64 min-w-full bg-blue-50 -rotate-3 transform top-60 -left-10 -right-10 opacity-70"></div>
       <div class="relative">
-        <div class="uppercase text-5xl mb-10 text-center">
+        <div class="uppercase  mb-10 text-center">
           <h2 class="">Laatste nieuws</h2>
         </div>
         <div class="flex xl:block xl:space-y-8">

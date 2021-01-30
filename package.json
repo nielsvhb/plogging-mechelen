@@ -16,7 +16,6 @@
     "purgecss": "^3.0.0",
     "tailwindcss": "^2.0.1",
     "video.js": "^7.10.2",
-    "vue-analytics": "^5.22.1",
     "vue-simple-markdown": "^1.1.4"
   }
 }
