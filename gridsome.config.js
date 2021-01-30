@@ -24,6 +24,12 @@ module.exports = {
           password: ''
         }
       }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-54216387-6'
+      }
     }
   ],
   css: {
