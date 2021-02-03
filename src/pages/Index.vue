@@ -56,10 +56,10 @@
         </div>
         <div class="flex xl:block xl:space-y-8">
           <div v-for="(article, index) in articles" :key="index" class="mx-4 rounded-xl shadow bg-white flex flex-col sm:mx-4">
-            <div class="flex items-center px-8 pt-8">
+            <div class="flex items-center px-8 pt-8 sm:px-6 ">
               <i class="fas fa-bullhorn mr-2 opacity-50 w-8 text-light-blue-500"></i><h3 class="text-light-blue-500">{{article.title}}</h3>
             </div>
-            <p class="text-gray-600 px-8 pt-4 leading-8 text-lg mb-5">
+            <p class="text-gray-600 px-8 pt-4 leading-8 text-lg mb-5 sm:leading-6 sm:px-6 sm:text-base">
               {{article.content}}
             </p>
             <div class="mt-auto flex items-center space-x-4 px-6 py-4 bg-light-blue-100 text-gray-500 md:px-10 md:py-6 sm:px-6 sm:py-3 rounded-b-xl leading-6 font-semibold">

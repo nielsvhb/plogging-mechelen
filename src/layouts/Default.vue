@@ -21,20 +21,20 @@
         <transition 
         name="fade"
         mode="out-in">
-      <main class="flex-grow flex-shrink-0 overflow-x-hidden">
-          <slot/>
-      </main>
+        <main class="flex-grow flex-shrink-0 overflow-x-hidden">
+            <slot/>
+        </main>
         </transition>
-      <footer class="bg-gray-800  py-10 mt-24">
-        <div class="container mx-auto">
+      <footer class="bg-gray-800  mt-24">
+        <div class="container mx-auto py-10 ">
           <div class="flex sm:block sm:space-y-6">
-              <div class="flex-col w-1/2">
+              <div class="flex-col w-1/2 sm:w-full">
                 <h2 class="text-gray-300 mb-4">Sitemap</h2>
                 <ul class="">
-                  <li class=" leading-6"><g-link class="text-gray-400 text-base hover:underline" to="/start">Start met ploggen</g-link></li>
-                  <li class=" leading-6"><g-link class="text-gray-400 text-base hover:underline" to="/sensibiliseer">Zet ploggen in de kijker</g-link></li>
-                  <li class=" leading-6"><g-link class="text-gray-400 text-base hover:underline" to="/faq">FAQ</g-link></li>
-                  <li class=" leading-6"><g-link class="text-gray-400 text-base hover:underline" to="/contact">Contact</g-link></li>
+                  <li class="leading-6"><g-link class="text-gray-400 text-base hover:underline" to="/start">Start met ploggen</g-link></li>
+                  <li class="leading-6"><g-link class="text-gray-400 text-base hover:underline" to="/sensibiliseer">Zet ploggen in de kijker</g-link></li>
+                  <li class="leading-6"><g-link class="text-gray-400 text-base hover:underline" to="/faq">FAQ</g-link></li>
+                  <li class="leading-6"><g-link class="text-gray-400 text-base hover:underline" to="/contact">Contact</g-link></li>
                 </ul>
               </div>
               <div class="flex-col w-1/2 sm:w-full">
@@ -52,7 +52,13 @@
                 </p>
               </div>
           </div>
-          
+        </div>
+        <div class="bg-gray-900">
+          <div class="mx-auto container">
+            <div class="text-gray-400 text-sm py-2">
+              <i class="fas fa-copyright mr-2 text-light-blue-400"></i> Alle rechten voorbehouden <span class="mx-3 inline-block sm:hidden">-</span>  <span class="sm:block">Website door <span class="text-gray-300">Niels Vanhorenbeeck</span></span>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
