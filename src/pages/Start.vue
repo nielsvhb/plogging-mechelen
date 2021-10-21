@@ -33,9 +33,7 @@
                      </li>
                     <li>
                         <ul class="pl-10">
-                            <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-light-blue-500"></i>Vul <a href="https://www.mechelen.be/eloket-peter-meter-openbaar-domein" target="_blank" class="text-light-blue-400 font-semibold">op deze website</a> het formulier in.</li>
-                            <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-light-blue-500"></i>Nadat je het formulier hebt ingevuld klik je op “VOLGEND”</li>
-                            <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-light-blue-500"></i>Opgelet! Je dient in het volgend scherm nog te klikken op “VERZENDEN”</li>
+                            <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-light-blue-500"></i>Klik op deze <a href="https://www.mechelen.be/melding/meldingsformulier" target="_blank" class="text-light-blue-400 font-semibold">link</a> en vraag uw vuilgrijper, handschoenen en vuilniszakken aan in het vak "melding".</li>
                             <li class="leading-loose"><i class="fas fa-caret-right mr-2 text-light-blue-500"></i>U krijgt na max 1 werkdag een email met de instructies mbt het afhalen van uw materiaal. Indien u geen bevestigingsmail krijgt, <g-link to="/contact" class="text-light-blue-400 font-semibold">contacteer Plogging Mechelen</g-link>.</li>
                         </ul>
                     </li>
